@@ -12,7 +12,7 @@ set shiftwidth=4 " If you change identation it will be 4 characters
 set smartindent " Best identation possible
 set nowrap " Lines can go off screen they will not be shown in the next line
 set scrolloff=8 " When you get to the bottom of the file it will start scrolling down when you have x lines left
-set relativenumber " Show relative number lines you can move pressing the number and a direction jk
+" set relativenumber " Show relative number lines you can move pressing the number and a direction jk
 set hidden " Allows to have non save buffers in the background
 set termguicolors
 set background=dark " This allows to have gruvbox with a black background instead of a white one
@@ -24,10 +24,11 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
 
 " colorscheme gruvbox
-colorscheme gruvbox
+colorscheme catppuccin_mocha 
 
 " Remaps
 let mapleader=" "
