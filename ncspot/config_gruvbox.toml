@@ -1,0 +1,19 @@
+notigy = true
+[theme]
+background = "#3C3836"
+primary = "#F1F1F1"
+secondary = "#D79921"
+title = "#D79921"
+playing = "#CC241D"
+playing_selected = "#CC241D"
+playing_bg = "#3C3836"
+highlight = "#8EC07C"
+highlight_bg = "#5C6658"
+error = "#C3817E"
+error_bg = "#CC241D"
+statusbar = "#000000"
+statusbar_progress = "#8EC07C"
+statusbar_bg = "#8EC07C"
+cmdline = "#CBFFDE"
+cmdline_bg = "#3C3836"
+
