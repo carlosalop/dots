@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "'Hack', 'monospace', monospace",
+  "editor.fontFamily": "'JetBrains Mono', 'Hack', 'monospace', monospace",
   "editor.quickSuggestionsDelay": 5,
   "editor.suggest.preview": true,
   "editor.tabCompletion": "on",
@@ -22,22 +22,6 @@
   "editor.copyWithSyntaxHighlighting": false,
   "editor.semanticHighlighting.enabled": true,
   "editor.tokenColorCustomizations": {
-    "[Catppuccin Macchiato]": {
-      "comments": "#afb0b4",
-      "textMateRules": [
-        {
-          "scope": [
-            "string.quoted.docstring.multi.python",
-            "source.python string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
-            "source.python string.quoted.docstring.multi.python punctuation.definition.string.end.python",
-            "source.python string.quoted.docstring.multi.python constant.character.escape.python"
-          ],
-          "settings": {
-            "foreground": "#afb0b4"
-          }
-        }
-      ]
-    },
     "[Gruvbox Dark Hard]": {
       "comments": "#7e7e7e",
       "textMateRules": [
@@ -77,18 +61,6 @@
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#b1ff63",
     "editorRuler.foreground": "#333333",
-    "[Cold Horizon]": {
-      "editorCursor.foreground": "#fafafa",
-      "editor.selectionBackground": "#2fbce783",
-      "editor.selectionHighlightBackground": "#2fbce783",
-      // "editor.wordHighlightBackground": "#2fbce783",
-      "editorBracketHighlight.foreground1": "#ffffff",
-      "editorBracketHighlight.foreground2": "#1a7b99",
-      "editorBracketHighlight.foreground3": "#00f2a1",
-      "editorBracketHighlight.foreground4": "#d37239",
-      "editorBracketHighlight.foreground5": "#ffffff",
-      "editorBracketHighlight.foreground6": "#1a7b99"
-    },
     "[Gruvbox Dark Hard]": {
       "editorCursor.foreground": "#B3AF25",
       "editorBracketHighlight.foreground1": "#B3AF25",
@@ -117,8 +89,12 @@
       "activityBar.border": "#282828",
       "editorGroup.border": "#282828",
       "editorGroupHeader.tabsBorder": "#282828",
-      "editorLineNumber.foreground": "#464443"
-    }
+      "editorLineNumber.foreground": "#464443",
+      "editorIndentGuide.background1": "#313030",
+      "tree.indentGuidesStroke": "#3b3b3b",
+      "tab.activeBorder": "#282828",
+    },
+
   },
   "security.workspace.trust.untrustedFiles": "open",
   "errorLens.delay": 300,
@@ -168,7 +144,6 @@
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
   "trailing-spaces.trimOnSave": true,
-  "workbench.colorTheme": "Gruvbox Dark Medium",
   "githubPullRequests.pullBranch": "never",
   "workbench.tree.enableStickyScroll": false,
   "githubPullRequests.fileListLayout": "tree",
@@ -176,7 +151,7 @@
   "diffEditor.renderSideBySide": false,
   "window.customTitleBarVisibility": "auto",
   "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
+  "window.menuBarVisibility": "toggle",
   "workbench.layoutControl.enabled": false,
   "explorer.openEditors.visible": 5,
   "editor.stickyScroll.enabled": true,
@@ -187,9 +162,20 @@
     "interface",
     "method",
     "module",
-    "package"
+    "package",
+    "constant"
   ],
-  "glassit.alpha": 240,
+  "trailing-spaces.syntaxIgnore": [
+    "markdown"
+  ],
+  "markdown.preview.breaks": true,
   "workbench.iconTheme": "gruvbox-material-icon-theme",
-  "workbench.activityBar.location": "hidden"
+  "material-icon-theme.saturation": 0.9,
+  "material-icon-theme.folders.theme": "none",
+  "material-icon-theme.opacity": 0.8,
+  "interactiveWindow.executeWithShiftEnter": true,
+  "editor.fontLigatures": true,
+  "window.density.editorTabHeight": "compact",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.activityBar.location": "hidden",
 }
