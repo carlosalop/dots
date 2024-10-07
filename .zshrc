@@ -101,3 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v=vim
 alias tm=tmux
+alias lg=lazygit
+alias bat=batcat
+alias fzfp='fzf --preview="batcat --color=always {}"'
+alias fzfgc='git checkout $(git branch -la | fzf)'

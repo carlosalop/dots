@@ -25,16 +25,20 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'sainnhe/gruvbox-material'
 call plug#end()
 
+" colorscheme catppuccin_mocha 
 " colorscheme gruvbox
-colorscheme catppuccin_mocha 
+colorscheme gruvbox-material
 
 " Remaps
 let mapleader=" "
 nnoremap <leader>f :Files<CR>
 nnoremap <leader><Tab> :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
+" This is used to search content on the folder you are in
+nnoremap <leader>r :Rg<CR>
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>h <C-w>h
