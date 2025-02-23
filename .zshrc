@@ -70,7 +70,7 @@ ZSH_THEME="sorin"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z colored-man-pages fzf zsh-autosuggestions zsh-syntax-highlighting dotenv)
+plugins=(git z colored-man-pages fzf zsh-autosuggestions zsh-syntax-highlighting dotenv dirhistory)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -99,9 +100,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias v=vim
+alias v=nvim
+alias y=yazi
 alias tm=tmux
 alias lg=lazygit
-alias bat=batcat
 alias fzfp='fzf --preview="batcat --color=always {}"'
 alias fzfgc='git checkout $(git branch -la | fzf)'
+alias fzfh='history | fzf'
